@@ -1,6 +1,6 @@
 # RailRunner
 
-![Service flow](RailRunner/flow.PNG?raw=true "Title")
+![Service flow](RailRunner/flow.PNG?raw=true "Flow")
 
 
 Service B = RailRunner
