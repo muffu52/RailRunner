@@ -19,8 +19,8 @@ A java-based project designed for a simple Train querying and booking system usi
   
 
  4.  RailRunnerClient (Client)
-
-    A simple client that is connected to the SOAP based service that calls the appropriate service and returns the desired information.
+     
+     A simple client that is connected to the SOAP based service that calls the appropriate service and returns the desired information.
 
  
 
