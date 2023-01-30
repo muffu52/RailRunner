@@ -13,7 +13,8 @@ A java-based project designed for a simple Train querying and booking system usi
 	 - java-json
 
   
- 3. WS_RailRunner (Service B)
+ 3. WS_RailRunner (Service A)
+ 
     2 SOAP based services to search and book trains using the REST APIS in service B 
   
 
