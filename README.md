@@ -13,12 +13,15 @@ A java-based project designed for a simple Train querying and booking system usi
 	 - java-json
 
   
- 3. WS_RailRunner (Service B)
+ 3. WS_RailRunner (Service A)
+ 
     2 SOAP based services to search and book trains using the REST APIS in service B 
   
 
  4.  RailRunnerClient (Client)
+     
+     A simple client that is connected to the SOAP based service that calls the appropriate service and returns the desired information.
 
- A simple client that is connected to the SOAP based service that calls the appropriate service and returns the desired information.
+ 
 
 
