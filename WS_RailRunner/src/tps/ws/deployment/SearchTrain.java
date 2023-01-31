@@ -102,58 +102,7 @@ public class SearchTrain {
 	      // code block
 	    }
 	   
-//		if(type == "schedule") {
-//			link = "http://localhost:8182/trainSchedule";
-//			
-//			if (departure != "") {
-//				link =  "http://localhost:8182/trainSchedule/"+ departure;
-//				}
-//			if (arrival != "") {
-//				link = "http://localhost:8182/trainSchedule/"+ departure +"/"+arrival;
-//				}
-//			if (d_time != "") {
-//				link = "http://localhost:8182/trainSchedule/"+departure +"/"+arrival +"/"+d_time;
-//				}
-//			if (a_time != "") {
-//				link = "http://localhost:8182/trainSchedule/"+departure +"/"+arrival +"/"+d_time+"/"+a_time;
-//				}
-//			
-//		}
-//		else if(type == "trip") {
-//			link = "http://localhost:8182/trip";
-//			
-//			if (departure != "") {
-//				link =  "http://localhost:8182/trip/"+ departure;
-//				}
-//			if (arrival != "") {
-//				link = "http://localhost:8182/trip/"+ departure +"/"+arrival;
-//				}
-//			if (date != "") {
-//				link = "http://localhost:8182/trip/"+departure +"/"+arrival +"/"+date;
-//				}
-//			if (d_time != "") {
-//				link = "http://localhost:8182/trip/"+departure +"/"+arrival +"/"+date +"/"+d_time;
-//				}
-//			if (a_time != "") {
-//				link = "http://localhost:8182/trip/"+departure +"/"+arrival +"/"+date +"/"+d_time+"/"+a_time;
-//				}
-//		}
-//		else if(type == "ticket") {
-//			link = "http://localhost:8182/ticket";
-//			
-//			if (name != "") {
-//				link =  "http://localhost:8182/ticket/"+ name;
-//				}
-//			if (date != "") {
-//				link = "http://localhost:8182/ticket/"+ name +"/"+date;
-//				}
-//		}
-//		else {
-//			link = "http://localhost:8182/trainDetails";
-//			if (company != "") {
-//				link = "http://localhost:8182/trainDetails/"+company;
-//			}
-//		}
+
 		
 		String newUrlString = link.replaceAll(" ", "%20");
 

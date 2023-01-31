@@ -14,29 +14,29 @@ public class TestClient {
 		
 		// Book my trip!
 		// TODO Auto-generated method stub
-//		BookTicketStub hwp = new BookTicketStub();
-//		Reserve r = new Reserve();
-//		r.setDeparture("Chelles Gournay");
-//		r.setArrival("Haussmann St Lazare");
-//		r.setDate("");
-//		r.setD_time("");
-//		r.setA_time("");
-//		r.setName("Hamza");
-//		r.setTicket_class("first"); // standard, first, business
-//		System.out.print(hwp.reserve(r).get_return());
+		BookTicketStub hwp = new BookTicketStub();
+		Reserve r = new Reserve();
+		r.setDeparture("Chelles Gournay");
+		r.setArrival("Haussmann St Lazare");
+		r.setDate("");
+		r.setD_time("");
+		r.setA_time("");
+		r.setName("Ali");
+		r.setTicket_class("business"); // standard, first, business
+		System.out.print(hwp.reserve(r).get_return());
 		
 		// Search 
-		SearchTrainStub sts = new SearchTrainStub();
-		Search s = new Search();
-		s.setType("schedule"); // schedule, trip, ticket, default (empty) -> trainDetails
-		s.setDeparture("Chelles Gournay");
-		s.setArrival("");
-		s.setDate("");
-		s.setD_time("");
-		s.setA_time("");
-		s.setCompany("");
-		s.setName("");
-		System.out.print(sts.search(s).get_return());
+//		SearchTrainStub sts = new SearchTrainStub();
+//		Search s = new Search();
+//		s.setType("schedule"); // schedule, trip, ticket, default (empty) -> trainDetails
+//		s.setDeparture("Chelles Gournay");
+//		s.setArrival("");
+//		s.setDate("");
+//		s.setD_time("");
+//		s.setA_time("");
+//		s.setCompany("");
+//		s.setName("");
+//		System.out.print(sts.search(s).get_return());
 	}
 
 }

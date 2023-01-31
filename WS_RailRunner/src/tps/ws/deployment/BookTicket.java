@@ -234,12 +234,18 @@ public class BookTicket {
         connection.setDoOutput(true);
         // Adding Body section of POST request
         JSONObject item = new JSONObject();
-        double fare = 2.05;
-        if (ticket_class == "first") {
-        	
+        double fare;
+        
+        switch(ticket_class) {
+        case "first":
         	fare = 5.05;
-        }else if(ticket_class == "business") {
+        	break;
+        case "business":
         	fare = 3.55;
+        	break;
+        default:
+        	fare = 2.05;
+        	break;
         }
         
         long millis=System.currentTimeMillis();  

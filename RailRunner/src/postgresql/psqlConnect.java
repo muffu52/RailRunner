@@ -218,16 +218,25 @@ public class psqlConnect {
     }
     
     public void updateTrip(String id, String ticket_class) {
-    	String query = "update public.trip set available_seats = available_seats - 1, ";
+    	String query = "update public.trip set available_seats = available_seats - 1";
     	try {
     		Connection conn = connect();
-    		if (ticket_class == "first") {
-    			query = query + " available_seats_first_class = available_seats_first_class - 1 ";
-    		}else if(ticket_class == "business") {
-    			query = query + " available_seats_business_class = available_seats_business_class - 1 ";
-    		}else {
-    			query = query + " available_seats_standard_class = available_seats_standard_class - 1 ";
-    		}
+    		switch(ticket_class) {
+    	    case "first":
+    	    	
+    	    	query = query + ", available_seats_first_class = available_seats_first_class - 1 ";
+    	    	
+    	      break;
+    	    case "business":
+    	    	
+    	    	query = query + ", available_seats_business_class = available_seats_business_class - 1 ";
+    	      // code block
+    	      break;
+    	    default:
+    	    	query = query + ", available_seats_standard_class = available_seats_standard_class - 1 ";
+    	      // code block
+    	    }
+    		
     		query = query + "  where id = '"+ id + "';";
             PreparedStatement preparedStmt = conn.prepareStatement(query);
             preparedStmt.executeUpdate();
