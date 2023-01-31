@@ -16,6 +16,8 @@ A java-based project designed for a simple Train querying and booking system usi
  3. WS_RailRunner (Service A)
  
     2 SOAP based services to search and book trains using the REST APIS in service B 
+    - apache-tomcat-9.0.52
+    - axis2-1.6.2
   
 
  4.  RailRunnerClient (Client)
